@@ -1857,6 +1857,18 @@ let
     meta.homepage = "https://github.com/twerth/ir_black/";
   };
 
+  iroh-vim = buildVimPluginFrom2Nix {
+    pname = "iroh-vim";
+    version = "2020-12-23";
+    src = fetchFromGitHub {
+      owner = "UnikMask";
+      repo = "iroh-vim";
+      rev = "96adb09548ab059fdc00f3dbf38371a16a6ebdb7";
+      sha256 = "0l7dn8ajxf6h8hd736i75xdg2299r07m2pfyjgbs8g857slsw8cs";
+    };
+    meta.homepage = "https://github.com/UnikMask/iroh-vim/";
+  };
+
   is-vim = buildVimPluginFrom2Nix {
     pname = "is-vim";
     version = "2020-10-27";
